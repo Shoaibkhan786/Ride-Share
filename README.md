@@ -1,5 +1,5 @@
 # Ride Share
-Berlin Foods is a hybrid mobile application developed in using react native framework.The following are the main functionalities of the app.
+Ride Share is a hybrid mobile application developed using react native framework.The following are the main functionalities of the app.
 
 - SMS verfication code based login
 - User can offer or take a ride.
