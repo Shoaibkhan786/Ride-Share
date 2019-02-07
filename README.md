@@ -11,7 +11,9 @@ Ride Share is a hybrid mobile application developed using react native framework
 Application's interfaces are shown below:
 ## Registration
 <img src="https://user-images.githubusercontent.com/18638795/52402638-9dcfd980-2ae6-11e9-8fe1-585a85fa869c.jpeg" height="400" width="250">
+
 ## Verfication code
 <img src="https://user-images.githubusercontent.com/18638795/52402841-1df63f00-2ae7-11e9-88f0-a076e0cbb51b.jpeg" height="400" width="250">
-## Verfication code
+
+## Driver Or Passenger
 <img src="https://user-images.githubusercontent.com/18638795/52402914-467e3900-2ae7-11e9-9030-f046265e3114.jpeg" height="400" width="250">
