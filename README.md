@@ -17,3 +17,9 @@ Application's interfaces are shown below:
 
 ## Driver Or Passenger
 <img src="https://user-images.githubusercontent.com/18638795/52402914-467e3900-2ae7-11e9-9030-f046265e3114.jpeg" height="400" width="250">
+
+## Search a Ride
+<img src="https://user-images.githubusercontent.com/18638795/52466713-0d0c0300-2ba5-11e9-8a56-aae9733d46f5.jpeg" height="400" width="250">
+
+## Offer a Ride
+<img src="https://user-images.githubusercontent.com/18638795/52466792-4b092700-2ba5-11e9-8434-84b66eee425d.jpeg" height="400" width="250">
