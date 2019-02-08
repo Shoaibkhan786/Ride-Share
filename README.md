@@ -29,3 +29,6 @@ Application's interfaces are shown below:
 
 ## Offered/Booked Rides
 <img src="https://user-images.githubusercontent.com/18638795/52467123-311c1400-2ba6-11e9-826a-ea2b1e5b7954.jpeg" height="400" width="250">
+
+## Profile
+<img src="https://user-images.githubusercontent.com/18638795/52468346-46933d00-2baa-11e9-9092-79ef9ec6342f.jpeg" height="400" width="250">
