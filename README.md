@@ -28,4 +28,4 @@ Application's interfaces are shown below:
 <img src="https://user-images.githubusercontent.com/18638795/52466952-b7842600-2ba5-11e9-8c01-5d5e7beff346.jpeg" height="400" width="250">
 
 ## Offered/Booked Rides
-<img src="https://user-images.githubusercontent.com/18638795/52466952-b7842600-2ba5-11e9-8c01-5d5e7beff346.jpeg" height="400" width="250">
+<img src="https://user-images.githubusercontent.com/18638795/52467123-311c1400-2ba6-11e9-826a-ea2b1e5b7954.jpeg" height="400" width="250">
