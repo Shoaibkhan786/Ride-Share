@@ -23,3 +23,9 @@ Application's interfaces are shown below:
 
 ## Offer a Ride
 <img src="https://user-images.githubusercontent.com/18638795/52466792-4b092700-2ba5-11e9-8434-84b66eee425d.jpeg" height="400" width="250">
+
+## Adding Vehicle
+<img src="https://user-images.githubusercontent.com/18638795/52466952-b7842600-2ba5-11e9-8c01-5d5e7beff346.jpeg" height="400" width="250">
+
+## Offered/Booked Rides
+<img src="https://user-images.githubusercontent.com/18638795/52466952-b7842600-2ba5-11e9-8c01-5d5e7beff346.jpeg" height="400" width="250">
