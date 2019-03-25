@@ -1,0 +1,7 @@
+{
+  "name": "rideshare",
+  "displayName": "rideshare",
+  "android":{
+    "package":"com.rideshare.app"
+  }
+}
