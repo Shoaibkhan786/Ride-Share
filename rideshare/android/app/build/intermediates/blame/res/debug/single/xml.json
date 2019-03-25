@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/shoaib/Desktop/RideShare/rideshare/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/home/shoaib/.gradle/caches/transforms-1/files-1.1/react-native-0.57.2.aar/1d59ed6a9061e95078cb32d93c766335/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/home/shoaib/Desktop/RideShare/rideshare/android/app/build/intermediates/res/merged/debug/xml/provider_paths.xml",
+        "source": "/home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-image-picker/android/build/intermediates/packaged_res/debug/xml/provider_paths.xml"
+    }
+]

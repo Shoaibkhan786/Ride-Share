@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/shoaib/Desktop/RideShare/rideshare/android/app/build/intermediates/res/merged/debug/layout-watch-v20/abc_alert_dialog_button_bar_material.xml",
+        "source": "/home/shoaib/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e7659dbea14de0dea79f8338ef45065e/res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/home/shoaib/Desktop/RideShare/rideshare/android/app/build/intermediates/res/merged/debug/layout-watch-v20/abc_alert_dialog_title_material.xml",
+        "source": "/home/shoaib/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e7659dbea14de0dea79f8338ef45065e/res/layout-watch-v20/abc_alert_dialog_title_material.xml"
+    }
+]

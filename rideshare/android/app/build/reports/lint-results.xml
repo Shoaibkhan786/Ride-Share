@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 3.1.4">
+
+    <issue
+        id="MissingPermission"
+        severity="Error"
+        message="Call requires permission which may be rejected by user: code should explicitly check to see if permission is available (with `checkPermission`) or explicitly handle a potential `SecurityException`"
+        category="Correctness"
+        priority="9"
+        summary="Missing Permissions"
+        explanation="This check scans through your code and libraries and looks at the APIs being used, and checks this against the set of permissions required to access those APIs. If the code using those APIs is called at runtime, then the program will crash.&#xA;&#xA;Furthermore, for permissions that are revocable (with targetSdkVersion 23), client code must also be prepared to handle the calls throwing an exception if the user rejects the request for permission at runtime."
+        errorLine1="            new RNFirebaseStoragePackage(),"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/java/com/rideshare/app/MainApplication.java"
+            line="40"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of com.android.support:appcompat-v7 than 27.1.1 is available: 28.0.0"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation &quot;com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build.gradle"
+            line="151"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of com.google.firebase:firebase-core than 16.0.4 is available: 16.0.5"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="  implementation &quot;com.google.firebase:firebase-core:16.0.4&quot;"
+        errorLine2="  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build.gradle"
+            line="156"
+            column="3"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of com.google.firebase:firebase-database than 16.0.4 is available: 16.0.5"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="  implementation &quot;com.google.firebase:firebase-database:16.0.4&quot;"
+        errorLine2="  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build.gradle"
+            line="160"
+            column="3"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of com.google.firebase:firebase-storage than 16.0.4 is available: 16.0.5"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="  implementation &quot;com.google.firebase:firebase-storage:16.0.4&quot;"
+        errorLine2="  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build.gradle"
+            line="162"
+            column="3"/>
+    </issue>
+
+    <issue
+        id="GradleDynamicVersion"
+        severity="Warning"
+        message="Avoid using + in version numbers; can lead to unpredictable and unrepeatable builds (com.facebook.react:react-native:+)"
+        category="Correctness"
+        priority="4"
+        summary="Gradle Dynamic Version"
+        explanation="Using `+` in dependencies lets you automatically pick up the latest available version rather than a specific, named version. However, this is not recommended; your builds are not repeatable; you may have tested with a slightly different version than what the build server used. (Using a dynamic version as the major version number is more problematic than using it in the minor version position.)"
+        errorLine1="    implementation &quot;com.facebook.react:react-native:+&quot;  // From node_modules"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build.gradle"
+            line="152"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.mipmap.ic_launcher_round` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"/>
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"/>
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"/>
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"/>
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.node_modules_reactnativedatepicker_date_icon` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        includedVariants="release"
+        excludedVariants="debug"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-mdpi/node_modules_reactnativedatepicker_date_icon.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        includedVariants="release"
+        excludedVariants="debug"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-mdpi/node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white.png"/>
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-xhdpi/node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white.png"/>
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-xxhdpi/node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.node_modules_reactnativerouterflux_images_back_chevron` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        includedVariants="release"
+        excludedVariants="debug"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-mdpi/node_modules_reactnativerouterflux_images_back_chevron.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.node_modules_reactnativerouterflux_images_menu_burger` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        includedVariants="release"
+        excludedVariants="debug"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-mdpi/node_modules_reactnativerouterflux_images_menu_burger.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.node_modules_reactnavigationstack_dist_views_assets_backicon` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        includedVariants="release"
+        excludedVariants="debug"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-hdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png"/>
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-mdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png"/>
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-xhdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png"/>
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-xxhdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png"/>
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-xxxhdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.node_modules_reactnavigationstack_dist_views_assets_backiconmask` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        includedVariants="release"
+        excludedVariants="debug"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-mdpi/node_modules_reactnavigationstack_dist_views_assets_backiconmask.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.src_asset_image_cnic` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        includedVariants="release"
+        excludedVariants="debug"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-mdpi/src_asset_image_cnic.jpeg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.src_asset_image_login` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        includedVariants="release"
+        excludedVariants="debug"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-mdpi/src_asset_image_login.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.src_asset_image_loginbackground` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        includedVariants="release"
+        excludedVariants="debug"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-mdpi/src_asset_image_loginbackground.jpg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.src_asset_image_luggage` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        includedVariants="release"
+        excludedVariants="debug"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-mdpi/src_asset_image_luggage.jpeg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.src_asset_image_profile` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        includedVariants="release"
+        excludedVariants="debug"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-mdpi/src_asset_image_profile.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.src_asset_image_profile1` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        includedVariants="release"
+        excludedVariants="debug"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-mdpi/src_asset_image_profile1.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.src_asset_image_profile11` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        includedVariants="release"
+        excludedVariants="debug"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-mdpi/src_asset_image_profile11.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.src_asset_image_profile14` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        includedVariants="release"
+        excludedVariants="debug"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-mdpi/src_asset_image_profile14.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.src_asset_image_profile15` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        includedVariants="release"
+        excludedVariants="debug"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-mdpi/src_asset_image_profile15.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.src_asset_image_profile2` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        includedVariants="release"
+        excludedVariants="debug"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-mdpi/src_asset_image_profile2.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.src_asset_image_profile9` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        includedVariants="release"
+        excludedVariants="debug"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-mdpi/src_asset_image_profile9.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.project_id` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;string name=&quot;project_id&quot; translatable=&quot;false&quot;>ride-share-2434b&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/google-services/release/values/values.xml"
+            line="10"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
+        severity="Warning"
+        message="Missing the following drawables in `drawable-hdpi`: node_modules_reactnativedatepicker_date_icon.png, node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white.png, node_modules_reactnativerouterflux_images_back_chevron.png, node_modules_reactnativerouterflux_images_menu_burger.png, node_modules_reactnavigationstack_dist_views_assets_backiconmask.png... (11 more)"
+        category="Usability:Icons"
+        priority="4"
+        summary="Icon densities validation"
+        explanation="Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra high). This lint check identifies icons which do not have complete coverage across the densities.&#xA;&#xA;Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable `ANDROID_LINT_INCLUDE_LDPI=true`. For more information on current density usage, see http://developer.android.com/resources/dashboard/screens.html"
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html"
+        includedVariants="release"
+        excludedVariants="debug">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-hdpi"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
+        severity="Warning"
+        message="Missing the following drawables in `drawable-xhdpi`: node_modules_reactnativedatepicker_date_icon.png, node_modules_reactnativerouterflux_images_back_chevron.png, node_modules_reactnativerouterflux_images_menu_burger.png, node_modules_reactnavigationstack_dist_views_assets_backiconmask.png, src_asset_image_cnic.jpeg... (10 more)"
+        category="Usability:Icons"
+        priority="4"
+        summary="Icon densities validation"
+        explanation="Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra high). This lint check identifies icons which do not have complete coverage across the densities.&#xA;&#xA;Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable `ANDROID_LINT_INCLUDE_LDPI=true`. For more information on current density usage, see http://developer.android.com/resources/dashboard/screens.html"
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html"
+        includedVariants="release"
+        excludedVariants="debug">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-xhdpi"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
+        severity="Warning"
+        message="Missing the following drawables in `drawable-xxhdpi`: node_modules_reactnativedatepicker_date_icon.png, node_modules_reactnativerouterflux_images_back_chevron.png, node_modules_reactnativerouterflux_images_menu_burger.png, node_modules_reactnavigationstack_dist_views_assets_backiconmask.png, src_asset_image_cnic.jpeg... (10 more)"
+        category="Usability:Icons"
+        priority="4"
+        summary="Icon densities validation"
+        explanation="Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra high). This lint check identifies icons which do not have complete coverage across the densities.&#xA;&#xA;Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable `ANDROID_LINT_INCLUDE_LDPI=true`. For more information on current density usage, see http://developer.android.com/resources/dashboard/screens.html"
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html"
+        includedVariants="release"
+        excludedVariants="debug">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/react/release/drawable-xxhdpi"/>
+    </issue>
+
+    <issue
+        id="GoogleAppIndexingWarning"
+        severity="Warning"
+        message="App is not indexable by Google Search; consider adding at least one Activity with an ACTION-VIEW intent filter. See issue explanation for more details."
+        category="Usability"
+        priority="5"
+        summary="Missing support for Firebase App Indexing"
+        explanation="Adds URLs to get your app into the Google index, to get installs and traffic to your app from Google Search."
+        url="https://g.co/AppIndexing/AndroidStudio"
+        urls="https://g.co/AppIndexing/AndroidStudio"
+        errorLine1="    &lt;application"
+        errorLine2="    ^"
+        quickfix="studio">
+        <location
+            file="/home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml"
+            line="11"
+            column="5"/>
+    </issue>
+
+</issues>

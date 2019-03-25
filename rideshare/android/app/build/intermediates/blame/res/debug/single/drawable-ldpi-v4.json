@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/shoaib/Desktop/RideShare/rideshare/android/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/toast_frame.9.png",
+        "source": "/home/shoaib/.gradle/caches/transforms-1/files-1.1/Toasty-1.3.0.aar/b5a14b8a5bd829e3fe1634abe502905f/res/drawable-ldpi-v4/toast_frame.9.png"
+    },
+    {
+        "merged": "/home/shoaib/Desktop/RideShare/rideshare/android/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/ic_stat_ic_notification.png",
+        "source": "/home/shoaib/Desktop/RideShare/rideshare/android/app/build/generated/res/pngs/debug/drawable-ldpi/ic_stat_ic_notification.png"
+    }
+]

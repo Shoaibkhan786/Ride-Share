@@ -1,0 +1,484 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:1:1-30:12
+MERGED from [:react-native-firebase] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-firebase/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-15:12
+MERGED from [:react-native-image-picker] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-23:12
+MERGED from [:react-native-vector-icons] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/release/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.57.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/react-native-0.57.2.aar/ab91afc38e6cfbc1ccb9de2371d12e76/AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/0debcc93a7dc15dd1b8e87b983b1f716/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-auth:16.0.5] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/d92bd42a36a47b1be1b4d6f4d527a996/AndroidManifest.xml:17:1-42:12
+MERGED from [com.google.firebase:firebase-database:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.4.aar/f1f781dcd180494beab9907c26c20e73/AndroidManifest.xml:15:1-25:12
+MERGED from [com.google.firebase:firebase-storage:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.4.aar/9da40e6e60fd3f1539751ac9fa68679c/AndroidManifest.xml:15:1-26:12
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/83b304ba31890619207af546e53151ef/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/2b6d8019690b9184162dabe1ba46c5fe/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-core:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.4.aar/9a9b3cddd3b6b2419320307a698465f3/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/8555e8d90f8ebdd48e649503032baf66/AndroidManifest.xml:17:1-34:12
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.2.aar/b7378b5f2c70b8573554a0e4e871082e/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/3bf822a7b09bd8516689fa5ac6a34f9e/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:17:1-59:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/ad38a23730325e280e511d786411bd0c/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/d9cf3135eb606e1371e6c5acc0f4118b/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-common:16.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/80ba9a5cc6c227c25bed1ae49d5621c3/AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/8bea6718f2151d7f0d096bcd998785a1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-database-collection:16.0.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.0.aar/47220fe72a174a6d3bfcf3e7d083a54a/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/dfa3933441e8f89958069e6358ca5013/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/befc6d684a14dbdb88c4f5ea5de16a31/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/2ebddfcec7500367ef5775e072fdb80c/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/6b90b40435d9037fa14ccf45c66ead15/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/9bcba8bd981838e12b4dc40c4ead4e86/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:multidex:1.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/f51686138ca6d55a8d3e20d9adf69180/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/ad9f95410c61716c6847b6cda506f957/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/4499af9df36a624bee60f2bcad1762d7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/30c6871080e2af12683a26b478c4faa3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/b0fe34532f779b030b6a91a5d3526c43/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/90227168c6dc40b4caf537bc59a67886/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/652e1605e2dd0706a2d2d027607e52a6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/afb03a9271899ecc2d9e6b7a043c2939/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/5c18fc487d195633be872fc4f5e5b1dc/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/2b353bd8f622d330765a023a08b3945a/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/fc01f1805633a2b83b39828fa192af7f/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/65a356bccff7f87ff833d9da43829b10/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/3c6c2e0a525ef465ecdb19b14f56c5f7/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.5.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/68c33c5df4fc611559dfeeb65f6dbef2/AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r174650] /home/shoaib/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/b4c9022e527856d5a3e50f0f6f1771f0/AndroidManifest.xml:1:1-3:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/cedf151b3316f8a196ed51ac99c8f070/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/f75bb40912fe216beabceb46398c6ec3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/899ffd5ba307b7a58b10611ed0bd4cae/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.3.aar/965392ea3f47280f35b39f266b0d6f00/AndroidManifest.xml:2:1-9:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/80b8805397e42185a2d398401c57af16/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/0e62244e3e8bd0418261e4e0c9bc58e3/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:1:1-30:12
+	package
+		ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:2:5-32
+		INJECTED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:1:1-30:12
+		INJECTED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:1:1-30:12
+		INJECTED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [:react-native-firebase] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-firebase/android/build/intermediates/manifests/full/release/AndroidManifest.xml:11:5-67
+MERGED from [:react-native-firebase] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-firebase/android/build/intermediates/manifests/full/release/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-database:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.4.aar/f1f781dcd180494beab9907c26c20e73/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-database:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.4.aar/f1f781dcd180494beab9907c26c20e73/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-storage:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.4.aar/9da40e6e60fd3f1539751ac9fa68679c/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-storage:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.4.aar/9da40e6e60fd3f1539751ac9fa68679c/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/8555e8d90f8ebdd48e649503032baf66/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/8555e8d90f8ebdd48e649503032baf66/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/3bf822a7b09bd8516689fa5ac6a34f9e/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/3bf822a7b09bd8516689fa5ac6a34f9e/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:5:5-77
+MERGED from [com.facebook.react:react-native:0.57.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/react-native-0.57.2.aar/ab91afc38e6cfbc1ccb9de2371d12e76/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.57.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/react-native-0.57.2.aar/ab91afc38e6cfbc1ccb9de2371d12e76/AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:5:22-75
+uses-permission#android.permission.CAMERA
+ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:6:5-65
+	android:name
+		ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:6:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:7:22-78
+application
+ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:11:5-28:19
+MERGED from [:react-native-image-picker] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/release/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-image-picker] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/release/AndroidManifest.xml:11:5-21:19
+MERGED from [com.facebook.react:react-native:0.57.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/react-native-0.57.2.aar/ab91afc38e6cfbc1ccb9de2371d12e76/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.57.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/react-native-0.57.2.aar/ab91afc38e6cfbc1ccb9de2371d12e76/AndroidManifest.xml:13:5-20
+MERGED from [com.google.firebase:firebase-auth:16.0.5] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/d92bd42a36a47b1be1b4d6f4d527a996/AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth:16.0.5] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/d92bd42a36a47b1be1b4d6f4d527a996/AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/2b6d8019690b9184162dabe1ba46c5fe/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/2b6d8019690b9184162dabe1ba46c5fe/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-core:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.4.aar/9a9b3cddd3b6b2419320307a698465f3/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.4.aar/9a9b3cddd3b6b2419320307a698465f3/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/8555e8d90f8ebdd48e649503032baf66/AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/8555e8d90f8ebdd48e649503032baf66/AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.2.aar/b7378b5f2c70b8573554a0e4e871082e/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.2.aar/b7378b5f2c70b8573554a0e4e871082e/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/3bf822a7b09bd8516689fa5ac6a34f9e/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/3bf822a7b09bd8516689fa5ac6a34f9e/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/ad38a23730325e280e511d786411bd0c/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/ad38a23730325e280e511d786411bd0c/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/d9cf3135eb606e1371e6c5acc0f4118b/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/d9cf3135eb606e1371e6c5acc0f4118b/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-common:16.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/80ba9a5cc6c227c25bed1ae49d5621c3/AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.firebase:firebase-common:16.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/80ba9a5cc6c227c25bed1ae49d5621c3/AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/8bea6718f2151d7f0d096bcd998785a1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/8bea6718f2151d7f0d096bcd998785a1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/dfa3933441e8f89958069e6358ca5013/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/dfa3933441e8f89958069e6358ca5013/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/befc6d684a14dbdb88c4f5ea5de16a31/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/befc6d684a14dbdb88c4f5ea5de16a31/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/2ebddfcec7500367ef5775e072fdb80c/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/2ebddfcec7500367ef5775e072fdb80c/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/6b90b40435d9037fa14ccf45c66ead15/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/6b90b40435d9037fa14ccf45c66ead15/AndroidManifest.xml:22:5-26:19
+MERGED from [com.facebook.soloader:soloader:0.5.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/68c33c5df4fc611559dfeeb65f6dbef2/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/68c33c5df4fc611559dfeeb65f6dbef2/AndroidManifest.xml:11:5-20
+MERGED from [org.webkit:android-jsc:r174650] /home/shoaib/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/b4c9022e527856d5a3e50f0f6f1771f0/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /home/shoaib/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/b4c9022e527856d5a3e50f0f6f1771f0/AndroidManifest.xml:2:3-17
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.3.aar/965392ea3f47280f35b39f266b0d6f00/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.3.aar/965392ea3f47280f35b39f266b0d6f00/AndroidManifest.xml:7:5-20
+	android:label
+		ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:13:7-39
+	android:icon
+		ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:14:7-41
+	android:allowBackup
+		ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:15:7-34
+	android:theme
+		ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:16:7-38
+	android:name
+		ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:12:7-38
+activity#com.rideshare.app.MainActivity
+ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:17:7-26:18
+	android:label
+		ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:19:9-41
+	android:windowSoftInputMode
+		ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:21:9-51
+	android:configChanges
+		ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:20:9-79
+	android:name
+		ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:18:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:22:9-25:25
+action#android.intent.action.MAIN
+ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:23:13-65
+	android:name
+		ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:23:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:24:13-73
+	android:name
+		ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:24:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:27:7-84
+	android:name
+		ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:27:17-81
+uses-sdk
+INJECTED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-firebase] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-firebase/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-firebase/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/release/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.57.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/react-native-0.57.2.aar/ab91afc38e6cfbc1ccb9de2371d12e76/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.57.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/react-native-0.57.2.aar/ab91afc38e6cfbc1ccb9de2371d12e76/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/0debcc93a7dc15dd1b8e87b983b1f716/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/0debcc93a7dc15dd1b8e87b983b1f716/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth:16.0.5] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/d92bd42a36a47b1be1b4d6f4d527a996/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:16.0.5] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/d92bd42a36a47b1be1b4d6f4d527a996/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-database:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.4.aar/f1f781dcd180494beab9907c26c20e73/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-database:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.4.aar/f1f781dcd180494beab9907c26c20e73/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-storage:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.4.aar/9da40e6e60fd3f1539751ac9fa68679c/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-storage:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.4.aar/9da40e6e60fd3f1539751ac9fa68679c/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/83b304ba31890619207af546e53151ef/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/83b304ba31890619207af546e53151ef/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/2b6d8019690b9184162dabe1ba46c5fe/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/2b6d8019690b9184162dabe1ba46c5fe/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.4.aar/9a9b3cddd3b6b2419320307a698465f3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.4.aar/9a9b3cddd3b6b2419320307a698465f3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/8555e8d90f8ebdd48e649503032baf66/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/8555e8d90f8ebdd48e649503032baf66/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.2.aar/b7378b5f2c70b8573554a0e4e871082e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.2.aar/b7378b5f2c70b8573554a0e4e871082e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/3bf822a7b09bd8516689fa5ac6a34f9e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/3bf822a7b09bd8516689fa5ac6a34f9e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/ad38a23730325e280e511d786411bd0c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/ad38a23730325e280e511d786411bd0c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/d9cf3135eb606e1371e6c5acc0f4118b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/d9cf3135eb606e1371e6c5acc0f4118b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:16.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/80ba9a5cc6c227c25bed1ae49d5621c3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-common:16.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/80ba9a5cc6c227c25bed1ae49d5621c3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/8bea6718f2151d7f0d096bcd998785a1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/8bea6718f2151d7f0d096bcd998785a1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-collection:16.0.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.0.aar/47220fe72a174a6d3bfcf3e7d083a54a/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-database-collection:16.0.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.0.aar/47220fe72a174a6d3bfcf3e7d083a54a/AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/dfa3933441e8f89958069e6358ca5013/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/dfa3933441e8f89958069e6358ca5013/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/befc6d684a14dbdb88c4f5ea5de16a31/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/befc6d684a14dbdb88c4f5ea5de16a31/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/2ebddfcec7500367ef5775e072fdb80c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/2ebddfcec7500367ef5775e072fdb80c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/6b90b40435d9037fa14ccf45c66ead15/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/6b90b40435d9037fa14ccf45c66ead15/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/9bcba8bd981838e12b4dc40c4ead4e86/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/9bcba8bd981838e12b4dc40c4ead4e86/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:multidex:1.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/f51686138ca6d55a8d3e20d9adf69180/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/f51686138ca6d55a8d3e20d9adf69180/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-fragment:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/ad9f95410c61716c6847b6cda506f957/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/ad9f95410c61716c6847b6cda506f957/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/4499af9df36a624bee60f2bcad1762d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/4499af9df36a624bee60f2bcad1762d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/30c6871080e2af12683a26b478c4faa3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/30c6871080e2af12683a26b478c4faa3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/b0fe34532f779b030b6a91a5d3526c43/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/b0fe34532f779b030b6a91a5d3526c43/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/90227168c6dc40b4caf537bc59a67886/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/90227168c6dc40b4caf537bc59a67886/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/652e1605e2dd0706a2d2d027607e52a6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/652e1605e2dd0706a2d2d027607e52a6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/afb03a9271899ecc2d9e6b7a043c2939/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/afb03a9271899ecc2d9e6b7a043c2939/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/5c18fc487d195633be872fc4f5e5b1dc/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/5c18fc487d195633be872fc4f5e5b1dc/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/2b353bd8f622d330765a023a08b3945a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/2b353bd8f622d330765a023a08b3945a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/fc01f1805633a2b83b39828fa192af7f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/fc01f1805633a2b83b39828fa192af7f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/65a356bccff7f87ff833d9da43829b10/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/65a356bccff7f87ff833d9da43829b10/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/3c6c2e0a525ef465ecdb19b14f56c5f7/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/3c6c2e0a525ef465ecdb19b14f56c5f7/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/68c33c5df4fc611559dfeeb65f6dbef2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/68c33c5df4fc611559dfeeb65f6dbef2/AndroidManifest.xml:7:5-9:41
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/cedf151b3316f8a196ed51ac99c8f070/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/cedf151b3316f8a196ed51ac99c8f070/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/f75bb40912fe216beabceb46398c6ec3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/f75bb40912fe216beabceb46398c6ec3/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/899ffd5ba307b7a58b10611ed0bd4cae/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/899ffd5ba307b7a58b10611ed0bd4cae/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.3.aar/965392ea3f47280f35b39f266b0d6f00/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.3.aar/965392ea3f47280f35b39f266b0d6f00/AndroidManifest.xml:5:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/80b8805397e42185a2d398401c57af16/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/80b8805397e42185a2d398401c57af16/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/0e62244e3e8bd0418261e4e0c9bc58e3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/0e62244e3e8bd0418261e4e0c9bc58e3/AndroidManifest.xml:20:5-44
+INJECTED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:react-native-firebase] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-firebase/android/build/intermediates/manifests/full/release/AndroidManifest.xml:12:5-68
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/8555e8d90f8ebdd48e649503032baf66/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/8555e8d90f8ebdd48e649503032baf66/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/3bf822a7b09bd8516689fa5ac6a34f9e/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/3bf822a7b09bd8516689fa5ac6a34f9e/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from [:react-native-firebase] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-firebase/android/build/intermediates/manifests/full/release/AndroidManifest.xml:12:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:react-native-firebase] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-firebase/android/build/intermediates/manifests/full/release/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-database:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.4.aar/f1f781dcd180494beab9907c26c20e73/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-database:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.4.aar/f1f781dcd180494beab9907c26c20e73/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-storage:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.4.aar/9da40e6e60fd3f1539751ac9fa68679c/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-storage:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.4.aar/9da40e6e60fd3f1539751ac9fa68679c/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/8555e8d90f8ebdd48e649503032baf66/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/8555e8d90f8ebdd48e649503032baf66/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/3bf822a7b09bd8516689fa5ac6a34f9e/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/3bf822a7b09bd8516689fa5ac6a34f9e/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [:react-native-firebase] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-firebase/android/build/intermediates/manifests/full/release/AndroidManifest.xml:13:22-76
+provider#com.imagepicker.FileProvider
+ADDED from [:react-native-image-picker] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/release/AndroidManifest.xml:12:9-20:20
+	android:grantUriPermissions
+		ADDED from [:react-native-image-picker] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/release/AndroidManifest.xml:16:13-47
+	android:authorities
+		ADDED from [:react-native-image-picker] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/release/AndroidManifest.xml:14:13-60
+	android:exported
+		ADDED from [:react-native-image-picker] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/release/AndroidManifest.xml:15:13-37
+	android:name
+		ADDED from [:react-native-image-picker] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/release/AndroidManifest.xml:13:13-56
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-image-picker] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/release/AndroidManifest.xml:17:13-19:58
+	android:resource
+		ADDED from [:react-native-image-picker] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/release/AndroidManifest.xml:19:17-55
+	android:name
+		ADDED from [:react-native-image-picker] /home/shoaib/Desktop/RideShare/rideshare/node_modules/react-native-image-picker/android/build/intermediates/manifests/full/release/AndroidManifest.xml:18:17-67
+activity#com.google.firebase.auth.internal.FederatedSignInActivity
+ADDED from [com.google.firebase:firebase-auth:16.0.5] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/d92bd42a36a47b1be1b4d6f4d527a996/AndroidManifest.xml:24:9-31:50
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/d92bd42a36a47b1be1b4d6f4d527a996/AndroidManifest.xml:26:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/d92bd42a36a47b1be1b4d6f4d527a996/AndroidManifest.xml:28:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/d92bd42a36a47b1be1b4d6f4d527a996/AndroidManifest.xml:27:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/d92bd42a36a47b1be1b4d6f4d527a996/AndroidManifest.xml:29:13-102
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/d92bd42a36a47b1be1b4d6f4d527a996/AndroidManifest.xml:30:13-72
+	tools:replace
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/d92bd42a36a47b1be1b4d6f4d527a996/AndroidManifest.xml:31:13-47
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/d92bd42a36a47b1be1b4d6f4d527a996/AndroidManifest.xml:25:13-85
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-auth:16.0.5] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/d92bd42a36a47b1be1b4d6f4d527a996/AndroidManifest.xml:33:9-39:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/8555e8d90f8ebdd48e649503032baf66/AndroidManifest.xml:27:9-31:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/8555e8d90f8ebdd48e649503032baf66/AndroidManifest.xml:27:9-31:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:29:9-35:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/d92bd42a36a47b1be1b4d6f4d527a996/AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/d92bd42a36a47b1be1b4d6f4d527a996/AndroidManifest.xml:34:13-84
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:16.0.5] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/d92bd42a36a47b1be1b4d6f4d527a996/AndroidManifest.xml:36:13-38:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/d92bd42a36a47b1be1b4d6f4d527a996/AndroidManifest.xml:38:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.0.5] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.5.aar/d92bd42a36a47b1be1b4d6f4d527a996/AndroidManifest.xml:37:17-109
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/8555e8d90f8ebdd48e649503032baf66/AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/8555e8d90f8ebdd48e649503032baf66/AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/8555e8d90f8ebdd48e649503032baf66/AndroidManifest.xml:29:17-139
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/3bf822a7b09bd8516689fa5ac6a34f9e/AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/3bf822a7b09bd8516689fa5ac6a34f9e/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:30:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/3bf822a7b09bd8516689fa5ac6a34f9e/AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/3bf822a7b09bd8516689fa5ac6a34f9e/AndroidManifest.xml:29:9-37:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:38:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:35:13-100
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:39:13-41:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:40:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:40:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:44:9-47:40
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:45:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:48:9-52:72
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:51:13-37
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:52:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/384870a631c4c1746fb5f677f91ff792/AndroidManifest.xml:49:13-87
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:42:25-78
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:50:9-56:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:52:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:51:13-77
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:53:13-55:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:53:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:54:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/8da02c4885f7886e81fd3f790d483bce/AndroidManifest.xml:54:25-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/d9cf3135eb606e1371e6c5acc0f4118b/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/d9cf3135eb606e1371e6c5acc0f4118b/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/d9cf3135eb606e1371e6c5acc0f4118b/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/d9cf3135eb606e1371e6c5acc0f4118b/AndroidManifest.xml:24:13-79
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:16.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/80ba9a5cc6c227c25bed1ae49d5621c3/AndroidManifest.xml:10:9-14:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/80ba9a5cc6c227c25bed1ae49d5621c3/AndroidManifest.xml:12:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/80ba9a5cc6c227c25bed1ae49d5621c3/AndroidManifest.xml:13:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/80ba9a5cc6c227c25bed1ae49d5621c3/AndroidManifest.xml:14:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /home/shoaib/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/80ba9a5cc6c227c25bed1ae49d5621c3/AndroidManifest.xml:11:13-77
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.1.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/6b90b40435d9037fa14ccf45c66ead15/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.1.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/6b90b40435d9037fa14ccf45c66ead15/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.1.0] /home/shoaib/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/6b90b40435d9037fa14ccf45c66ead15/AndroidManifest.xml:24:13-58
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:1:1-30:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/AndroidManifest.xml:1:1-30:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE

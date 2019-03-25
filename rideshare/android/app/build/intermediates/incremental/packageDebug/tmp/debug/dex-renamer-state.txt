@@ -1,0 +1,4 @@
+#Thu Mar 21 20:20:46 PKT 2019
+base.0=/home/shoaib/Desktop/RideShare/rideshare/android/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

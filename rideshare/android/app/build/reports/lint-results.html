@@ -1,0 +1,1019 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Lint Report</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue-indigo.min.css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+<style>
+section.section--center {
+    max-width: 860px;
+}
+.mdl-card__supporting-text + .mdl-card__actions {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+main > .mdl-layout__tab-panel {
+  padding: 8px;
+  padding-top: 48px;
+}
+
+.mdl-card__actions {
+    margin: 0;
+    padding: 4px 40px;
+    color: inherit;
+}
+.mdl-card > * {
+    height: auto;
+}
+.mdl-card__actions a {
+    color: #00BCD4;
+    margin: 0;
+}
+.error-icon {
+    color: #bb7777;
+    vertical-align: bottom;
+}
+.warning-icon {
+    vertical-align: bottom;
+}
+.mdl-layout__content section:not(:last-of-type) {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.mdl-card .mdl-card__supporting-text {
+  margin: 40px;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0;
+  color: inherit;
+  width: calc(100% - 80px);
+}
+div.mdl-layout__drawer-button .material-icons {
+    line-height: 48px;
+}
+.mdl-card .mdl-card__supporting-text {
+    margin-top: 0px;
+}
+.chips {
+    float: right;
+    vertical-align: middle;
+}
+pre.errorlines {
+    background-color: white;
+    font-family: monospace;
+    border: 1px solid #e0e0e0;
+    line-height: 0.9rem;
+    font-size: 0.9rem;    padding: 1px 0px 1px; 1px;
+    overflow: scroll;
+}
+.prefix {
+    color: #660e7a;
+    font-weight: bold;
+}
+.attribute {
+    color: #0000ff;
+    font-weight: bold;
+}
+.value {
+    color: #008000;
+    font-weight: bold;
+}
+.tag {
+    color: #000080;
+    font-weight: bold;
+}
+.comment {
+    color: #808080;
+    font-style: italic;
+}
+.javadoc {
+    color: #808080;
+    font-style: italic;
+}
+.annotation {
+    color: #808000;
+}
+.string {
+    color: #008000;
+    font-weight: bold;
+}
+.number {
+    color: #0000ff;
+}
+.keyword {
+    color: #000080;
+    font-weight: bold;
+}
+.caretline {
+    background-color: #fffae3;
+}
+.lineno {
+    color: #999999;
+    background-color: #f0f0f0;
+}
+.error {
+    display: inline-block;
+    position:relative;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AwCFR4T/3uLMgAAADxJREFUCNdNyLERQEAABMCjL4lQwIzcjErpguAL+C9AvgKJDbeD/PRpLdm35Hm+MU+cB+tCKaJW4L4YBy+CAiLJrFs9mgAAAABJRU5ErkJggg==) bottom repeat-x;
+}
+.warning {
+    text-decoration: none;
+    background-color: #f6ebbc;
+}
+.overview {
+    padding: 10pt;
+    width: 100%;
+    overflow: auto;
+    border-collapse:collapse;
+}
+.overview tr {
+    border-bottom: solid 1px #eeeeee;
+}
+.categoryColumn a {
+     text-decoration: none;
+     color: inherit;
+}
+.countColumn {
+    text-align: right;
+    padding-right: 20px;
+    width: 50px;
+}
+.issueColumn {
+   padding-left: 16px;
+}
+.categoryColumn {
+   position: relative;
+   left: -50px;
+   padding-top: 20px;
+   padding-bottom: 5px;
+}
+</style>
+<script language="javascript" type="text/javascript"> 
+<!--
+function reveal(id) {
+if (document.getElementById) {
+document.getElementById(id).style.display = 'block';
+document.getElementById(id+'Link').style.display = 'none';
+}
+}
+function hideid(id) {
+if (document.getElementById) {
+document.getElementById(id).style.display = 'none';
+}
+}
+//--> 
+</script>
+</head>
+<body class="mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout-title">Lint Report: 1 error and 28 warnings</span>
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+Check performed at Tue Nov 20 18:51:08 PKT 2018      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Issue Types</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="#overview"><i class="material-icons">dashboard</i>Overview</a>
+      <a class="mdl-navigation__link" href="#MissingPermission"><i class="material-icons error-icon">error</i>Missing Permissions (1)</a>
+      <a class="mdl-navigation__link" href="#GradleDependency"><i class="material-icons warning-icon">warning</i>Obsolete Gradle Dependency (4)</a>
+      <a class="mdl-navigation__link" href="#GradleDynamicVersion"><i class="material-icons warning-icon">warning</i>Gradle Dynamic Version (1)</a>
+      <a class="mdl-navigation__link" href="#UnusedResources"><i class="material-icons warning-icon">warning</i>Unused resources (19)</a>
+      <a class="mdl-navigation__link" href="#IconDensities"><i class="material-icons warning-icon">warning</i>Icon densities validation (3)</a>
+      <a class="mdl-navigation__link" href="#GoogleAppIndexingWarning"><i class="material-icons warning-icon">warning</i>Missing support for Firebase App Indexing (1)</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="mdl-layout__tab-panel is-active">
+<a name="overview"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="OverviewCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Overview</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<table class="overview">
+<tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Correctness">Correctness</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons error-icon">error</i>
+<a href="#MissingPermission">MissingPermission</a>: Missing Permissions</td></tr>
+<tr>
+<td class="countColumn">4</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#GradleDependency">GradleDependency</a>: Obsolete Gradle Dependency</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#GradleDynamicVersion">GradleDynamicVersion</a>: Gradle Dynamic Version</td></tr>
+<tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Performance">Performance</a>
+</td></tr>
+<tr>
+<td class="countColumn">19</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#UnusedResources">UnusedResources</a>: Unused resources</td></tr>
+<tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Usability:Icons">Usability:Icons</a>
+</td></tr>
+<tr>
+<td class="countColumn">3</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#IconDensities">IconDensities</a>: Icon densities validation</td></tr>
+<tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Usability">Usability</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#GoogleAppIndexingWarning">GoogleAppIndexingWarning</a>: Missing support for Firebase App Indexing</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#MissingIssues">Disabled Checks (23)</a>
+</td></tr></table>
+<br/>              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="OverviewCardLink" onclick="hideid('OverviewCard');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="Correctness"></a>
+<a name="MissingPermission"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="MissingPermissionCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Missing Permissions</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/java/com/rideshare/app/MainApplication.java">../../src/main/java/com/rideshare/app/MainApplication.java</a>:40</span>: <span class="message">Call requires permission which may be rejected by user: code should explicitly check to see if permission is available (with <code>checkPermission</code>) or explicitly handle a potential <code>SecurityException</code></span><br /><pre class="errorlines">
+<span class="lineno"> 37 </span>            <span class="comment">//new RNCameraPackage(),</span>
+<span class="lineno"> 38 </span>            <span class="keyword">new</span> RNFirebaseAuthPackage(), 
+<span class="lineno"> 39 </span>            <span class="keyword">new</span> RNFirebaseDatabasePackage(),
+<span class="caretline"><span class="lineno"> 40 </span>            <span class="error"><span class="keyword">new</span> RNFirebaseStoragePackage()</span>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 41 </span>            <span class="keyword">new</span> VectorIconsPackage()
+<span class="lineno"> 42 </span>      );
+<span class="lineno"> 43 </span>    }
+</pre>
+
+</div>
+<div class="metadata"><div class="explanation" id="explanationMissingPermission" style="display: none;">
+This check scans through your code and libraries and looks at the APIs being used, and checks this against the set of permissions required to access those APIs. If the code using those APIs is called at runtime, then the program will crash.<br/>
+<br/>
+Furthermore, for permissions that are revocable (with targetSdkVersion 23), client code must also be prepared to handle the calls throwing an exception if the user rejects the request for permission at runtime.<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "MissingPermission" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">MissingPermission</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Correctness</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Error</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 9/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationMissingPermissionLink" onclick="reveal('explanationMissingPermission');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="MissingPermissionCardLink" onclick="hideid('MissingPermissionCard');">
+Dismiss</button>            </div>
+            </div>
+          </section><a name="GradleDependency"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="GradleDependencyCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Obsolete Gradle Dependency</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:151</span>: <span class="message">A newer version of com.android.support:appcompat-v7 than 27.1.1 is available: 28.0.0</span><br /><pre class="errorlines">
+<span class="lineno"> 148 </span>   <span class="comment">// implementation project(':react-native-camera')</span>
+<span class="lineno"> 149 </span>    implementation project(<span class="string">':react-native-vector-icons'</span>)
+<span class="lineno"> 150 </span>    implementation fileTree(dir: <span class="string">"libs"</span>, include: [<span class="string">"*.jar"</span>])
+<span class="caretline"><span class="lineno"> 151 </span>    <span class="warning">implementation <span class="string">"com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 152 </span>    implementation <span class="string">"com.facebook.react:react-native:+"</span>  <span class="comment">// From node_modules</span>
+<span class="lineno"> 153 </span>
+<span class="lineno"> 154 </span>  <span class="comment">// Firebase dependencies</span></pre>
+
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:156</span>: <span class="message">A newer version of com.google.firebase:firebase-core than 16.0.4 is available: 16.0.5</span><br /><pre class="errorlines">
+<span class="lineno"> 153 </span>
+<span class="lineno"> 154 </span>  <span class="comment">// Firebase dependencies</span>
+<span class="lineno"> 155 </span>  implementation <span class="string">"com.google.android.gms:play-services-base:16.0.1"</span>
+<span class="caretline"><span class="lineno"> 156 </span>  <span class="warning">implementation <span class="string">"com.google.firebase:firebase-core:16.0.4"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 157 </span>  <span class="comment">//firebase auth</span>
+<span class="lineno"> 158 </span>  implementation <span class="string">"com.google.firebase:firebase-auth:16.0.5"</span>
+<span class="lineno"> 159 </span>  <span class="comment">//firebase real-time database</span></pre>
+
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:160</span>: <span class="message">A newer version of com.google.firebase:firebase-database than 16.0.4 is available: 16.0.5</span><br /><pre class="errorlines">
+<span class="lineno"> 157 </span>  <span class="comment">//firebase auth</span>
+<span class="lineno"> 158 </span>  implementation <span class="string">"com.google.firebase:firebase-auth:16.0.5"</span>
+<span class="lineno"> 159 </span>  <span class="comment">//firebase real-time database</span>
+<span class="caretline"><span class="lineno"> 160 </span>  <span class="warning">implementation <span class="string">"com.google.firebase:firebase-database:16.0.4"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 161 </span>  <span class="comment">//firebase storage</span>
+<span class="lineno"> 162 </span>  implementation <span class="string">"com.google.firebase:firebase-storage:16.0.4"</span>
+<span class="lineno"> 163 </span>}
+</pre>
+
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:162</span>: <span class="message">A newer version of com.google.firebase:firebase-storage than 16.0.4 is available: 16.0.5</span><br /><pre class="errorlines">
+<span class="lineno"> 159 </span>  <span class="comment">//firebase real-time database</span>
+<span class="lineno"> 160 </span>  implementation <span class="string">"com.google.firebase:firebase-database:16.0.4"</span>
+<span class="lineno"> 161 </span>  <span class="comment">//firebase storage</span>
+<span class="caretline"><span class="lineno"> 162 </span>  <span class="warning">implementation <span class="string">"com.google.firebase:firebase-storage:16.0.4"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 163 </span>}
+<span class="lineno"> 164 </span>
+<span class="lineno"> 165 </span><span class="comment">// Run this once to be able to run the application with BUCK</span></pre>
+
+</div>
+<div class="metadata"><div class="explanation" id="explanationGradleDependency" style="display: none;">
+This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find.<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "GradleDependency" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">GradleDependency</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Correctness</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 4/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationGradleDependencyLink" onclick="reveal('explanationGradleDependency');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="GradleDependencyCardLink" onclick="hideid('GradleDependencyCard');">
+Dismiss</button>            </div>
+            </div>
+          </section><a name="GradleDynamicVersion"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="GradleDynamicVersionCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Gradle Dynamic Version</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:152</span>: <span class="message">Avoid using + in version numbers; can lead to unpredictable and unrepeatable builds (com.facebook.react:react-native:+)</span><br /><pre class="errorlines">
+<span class="lineno"> 149 </span>    implementation project(<span class="string">':react-native-vector-icons'</span>)
+<span class="lineno"> 150 </span>    implementation fileTree(dir: <span class="string">"libs"</span>, include: [<span class="string">"*.jar"</span>])
+<span class="lineno"> 151 </span>    implementation <span class="string">"com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"</span>
+<span class="caretline"><span class="lineno"> 152 </span>    <span class="warning">implementation <span class="string">"com.facebook.react:react-native:+"</span>  <span class="comment">// From node_modules</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 153 </span>
+<span class="lineno"> 154 </span>  <span class="comment">// Firebase dependencies</span>
+<span class="lineno"> 155 </span>  implementation <span class="string">"com.google.android.gms:play-services-base:16.0.1"</span></pre>
+
+</div>
+<div class="metadata"><div class="explanation" id="explanationGradleDynamicVersion" style="display: none;">
+Using <code>+</code> in dependencies lets you automatically pick up the latest available version rather than a specific, named version. However, this is not recommended; your builds are not repeatable; you may have tested with a slightly different version than what the build server used. (Using a dynamic version as the major version number is more problematic than using it in the minor version position.)<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "GradleDynamicVersion" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">GradleDynamicVersion</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Correctness</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 4/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationGradleDynamicVersionLink" onclick="reveal('explanationGradleDynamicVersion');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="GradleDynamicVersionCardLink" onclick="hideid('GradleDynamicVersionCard');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="Performance"></a>
+<a name="UnusedResources"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="UnusedResourcesCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Unused resources</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/res/mipmap-hdpi/ic_launcher_round.png">../../src/main/res/mipmap-hdpi/ic_launcher_round.png</a></span>: <span class="message">The resource <code>R.mipmap.ic_launcher_round</code> appears to be unused</span><br />
+<ul></ul><button id="Location1DivLink" onclick="reveal('Location1Div');" />+ 4 Additional Locations...</button>
+<div id="Location1Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../src/main/res/mipmap-mdpi/ic_launcher_round.png">../../src/main/res/mipmap-mdpi/ic_launcher_round.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/mipmap-xhdpi/ic_launcher_round.png">../../src/main/res/mipmap-xhdpi/ic_launcher_round.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/mipmap-xxhdpi/ic_launcher_round.png">../../src/main/res/mipmap-xxhdpi/ic_launcher_round.png</a></span>
+<li> <span class="location"><a href="../../src/main/res/mipmap-xxxhdpi/ic_launcher_round.png">../../src/main/res/mipmap-xxxhdpi/ic_launcher_round.png</a></span>
+</ul>
+</div><br/><br/>
+<table>
+<tr><td><a href="../../src/main/res/mipmap-mdpi/ic_launcher_round.png"><img border="0" align="top" src="../../src/main/res/mipmap-mdpi/ic_launcher_round.png" /></a>
+</td><td><a href="../../src/main/res/mipmap-hdpi/ic_launcher_round.png"><img border="0" align="top" src="../../src/main/res/mipmap-hdpi/ic_launcher_round.png" /></a>
+</td><td><a href="../../src/main/res/mipmap-xhdpi/ic_launcher_round.png"><img border="0" align="top" src="../../src/main/res/mipmap-xhdpi/ic_launcher_round.png" /></a>
+</td><td><a href="../../src/main/res/mipmap-xxhdpi/ic_launcher_round.png"><img border="0" align="top" src="../../src/main/res/mipmap-xxhdpi/ic_launcher_round.png" /></a>
+</td><td><a href="../../src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"><img border="0" align="top" src="../../src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" /></a>
+</td></tr><tr><th></th><th></th><th></th><th></th><th></th></tr>
+</table>
+<span class="location"><a href="../generated/res/react/release/drawable-mdpi/node_modules_reactnativedatepicker_date_icon.png">../generated/res/react/release/drawable-mdpi/node_modules_reactnativedatepicker_date_icon.png</a></span>: <img class="embedimage" align="right" src="../generated/res/react/release/drawable-mdpi/node_modules_reactnativedatepicker_date_icon.png" /><span class="message">The resource <code>R.drawable.node_modules_reactnativedatepicker_date_icon</code> appears to be unused</span><br clear="right"/>
+
+Applies to variants: release<br/>
+Does <b>not</b> apply to variants: debug<br/>
+<span class="location"><a href="../generated/res/react/release/drawable-mdpi/node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white.png">../generated/res/react/release/drawable-mdpi/node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white.png</a></span>: <span class="message">The resource <code>R.drawable.node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white</code> appears to be unused</span><br />
+<ul></ul><button id="Location3DivLink" onclick="reveal('Location3Div');" />+ 2 Additional Locations...</button>
+<div id="Location3Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../generated/res/react/release/drawable-xhdpi/node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white.png">../generated/res/react/release/drawable-xhdpi/node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white.png</a></span>
+<li> <span class="location"><a href="../generated/res/react/release/drawable-xxhdpi/node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white.png">../generated/res/react/release/drawable-xxhdpi/node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white.png</a></span>
+</ul>
+</div><br/><br/>
+<table>
+<tr><td><a href="../generated/res/react/release/drawable-mdpi/node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white.png"><img border="0" align="top" src="../generated/res/react/release/drawable-mdpi/node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white.png" /></a>
+</td><td><a href="../generated/res/react/release/drawable-xhdpi/node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white.png"><img border="0" align="top" src="../generated/res/react/release/drawable-xhdpi/node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white.png" /></a>
+</td><td><a href="../generated/res/react/release/drawable-xxhdpi/node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white.png"><img border="0" align="top" src="../generated/res/react/release/drawable-xxhdpi/node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white.png" /></a>
+</td></tr><tr><th>mdpi</th><th>xhdpi</th><th>xxhdpi</th></tr>
+</table>
+
+Applies to variants: release<br/>
+Does <b>not</b> apply to variants: debug<br/>
+<span class="location"><a href="../generated/res/react/release/drawable-mdpi/node_modules_reactnativerouterflux_images_back_chevron.png">../generated/res/react/release/drawable-mdpi/node_modules_reactnativerouterflux_images_back_chevron.png</a></span>: <img class="embedimage" align="right" src="../generated/res/react/release/drawable-mdpi/node_modules_reactnativerouterflux_images_back_chevron.png" /><span class="message">The resource <code>R.drawable.node_modules_reactnativerouterflux_images_back_chevron</code> appears to be unused</span><br clear="right"/>
+
+Applies to variants: release<br/>
+Does <b>not</b> apply to variants: debug<br/>
+<span class="location"><a href="../generated/res/react/release/drawable-mdpi/node_modules_reactnativerouterflux_images_menu_burger.png">../generated/res/react/release/drawable-mdpi/node_modules_reactnativerouterflux_images_menu_burger.png</a></span>: <img class="embedimage" align="right" src="../generated/res/react/release/drawable-mdpi/node_modules_reactnativerouterflux_images_menu_burger.png" /><span class="message">The resource <code>R.drawable.node_modules_reactnativerouterflux_images_menu_burger</code> appears to be unused</span><br clear="right"/>
+
+Applies to variants: release<br/>
+Does <b>not</b> apply to variants: debug<br/>
+<button class="mdl-button mdl-js-button mdl-button--primary" id="UnusedResourcesDivLink" onclick="reveal('UnusedResourcesDiv');" />+ 14 More Occurrences...</button>
+<div id="UnusedResourcesDiv" style="display: none">
+<span class="location"><a href="../generated/res/react/release/drawable-hdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png">../generated/res/react/release/drawable-hdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png</a></span>: <span class="message">The resource <code>R.drawable.node_modules_reactnavigationstack_dist_views_assets_backicon</code> appears to be unused</span><br />
+<ul></ul><button id="Location6DivLink" onclick="reveal('Location6Div');" />+ 4 Additional Locations...</button>
+<div id="Location6Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../generated/res/react/release/drawable-mdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png">../generated/res/react/release/drawable-mdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png</a></span>
+<li> <span class="location"><a href="../generated/res/react/release/drawable-xhdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png">../generated/res/react/release/drawable-xhdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png</a></span>
+<li> <span class="location"><a href="../generated/res/react/release/drawable-xxhdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png">../generated/res/react/release/drawable-xxhdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png</a></span>
+<li> <span class="location"><a href="../generated/res/react/release/drawable-xxxhdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png">../generated/res/react/release/drawable-xxxhdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png</a></span>
+</ul>
+</div><br/><br/>
+<table>
+<tr><td><a href="../generated/res/react/release/drawable-mdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png"><img border="0" align="top" src="../generated/res/react/release/drawable-mdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png" /></a>
+</td><td><a href="../generated/res/react/release/drawable-hdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png"><img border="0" align="top" src="../generated/res/react/release/drawable-hdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png" /></a>
+</td><td><a href="../generated/res/react/release/drawable-xhdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png"><img border="0" align="top" src="../generated/res/react/release/drawable-xhdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png" /></a>
+</td><td><a href="../generated/res/react/release/drawable-xxhdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png"><img border="0" align="top" src="../generated/res/react/release/drawable-xxhdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png" /></a>
+</td><td><a href="../generated/res/react/release/drawable-xxxhdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png"><img border="0" align="top" src="../generated/res/react/release/drawable-xxxhdpi/node_modules_reactnavigationstack_dist_views_assets_backicon.png" /></a>
+</td></tr><tr><th>mdpi</th><th>hdpi</th><th>xhdpi</th><th>xxhdpi</th><th>xxxhdpi</th></tr>
+</table>
+
+Applies to variants: release<br/>
+Does <b>not</b> apply to variants: debug<br/>
+<span class="location"><a href="../generated/res/react/release/drawable-mdpi/node_modules_reactnavigationstack_dist_views_assets_backiconmask.png">../generated/res/react/release/drawable-mdpi/node_modules_reactnavigationstack_dist_views_assets_backiconmask.png</a></span>: <img class="embedimage" align="right" src="../generated/res/react/release/drawable-mdpi/node_modules_reactnavigationstack_dist_views_assets_backiconmask.png" /><span class="message">The resource <code>R.drawable.node_modules_reactnavigationstack_dist_views_assets_backiconmask</code> appears to be unused</span><br clear="right"/>
+
+Applies to variants: release<br/>
+Does <b>not</b> apply to variants: debug<br/>
+<span class="location"><a href="../generated/res/react/release/drawable-mdpi/src_asset_image_cnic.jpeg">../generated/res/react/release/drawable-mdpi/src_asset_image_cnic.jpeg</a></span>: <img class="embedimage" align="right" src="../generated/res/react/release/drawable-mdpi/src_asset_image_cnic.jpeg" /><span class="message">The resource <code>R.drawable.src_asset_image_cnic</code> appears to be unused</span><br clear="right"/>
+
+Applies to variants: release<br/>
+Does <b>not</b> apply to variants: debug<br/>
+<span class="location"><a href="../generated/res/react/release/drawable-mdpi/src_asset_image_login.png">../generated/res/react/release/drawable-mdpi/src_asset_image_login.png</a></span>: <img class="embedimage" align="right" src="../generated/res/react/release/drawable-mdpi/src_asset_image_login.png" /><span class="message">The resource <code>R.drawable.src_asset_image_login</code> appears to be unused</span><br clear="right"/>
+
+Applies to variants: release<br/>
+Does <b>not</b> apply to variants: debug<br/>
+<span class="location"><a href="../generated/res/react/release/drawable-mdpi/src_asset_image_loginbackground.jpg">../generated/res/react/release/drawable-mdpi/src_asset_image_loginbackground.jpg</a></span>: <img class="embedimage" align="right" src="../generated/res/react/release/drawable-mdpi/src_asset_image_loginbackground.jpg" /><span class="message">The resource <code>R.drawable.src_asset_image_loginbackground</code> appears to be unused</span><br clear="right"/>
+
+Applies to variants: release<br/>
+Does <b>not</b> apply to variants: debug<br/>
+<span class="location"><a href="../generated/res/react/release/drawable-mdpi/src_asset_image_luggage.jpeg">../generated/res/react/release/drawable-mdpi/src_asset_image_luggage.jpeg</a></span>: <img class="embedimage" align="right" src="../generated/res/react/release/drawable-mdpi/src_asset_image_luggage.jpeg" /><span class="message">The resource <code>R.drawable.src_asset_image_luggage</code> appears to be unused</span><br clear="right"/>
+
+Applies to variants: release<br/>
+Does <b>not</b> apply to variants: debug<br/>
+<span class="location"><a href="../generated/res/react/release/drawable-mdpi/src_asset_image_profile.png">../generated/res/react/release/drawable-mdpi/src_asset_image_profile.png</a></span>: <img class="embedimage" align="right" src="../generated/res/react/release/drawable-mdpi/src_asset_image_profile.png" /><span class="message">The resource <code>R.drawable.src_asset_image_profile</code> appears to be unused</span><br clear="right"/>
+
+Applies to variants: release<br/>
+Does <b>not</b> apply to variants: debug<br/>
+<span class="location"><a href="../generated/res/react/release/drawable-mdpi/src_asset_image_profile1.png">../generated/res/react/release/drawable-mdpi/src_asset_image_profile1.png</a></span>: <img class="embedimage" align="right" src="../generated/res/react/release/drawable-mdpi/src_asset_image_profile1.png" /><span class="message">The resource <code>R.drawable.src_asset_image_profile1</code> appears to be unused</span><br clear="right"/>
+
+Applies to variants: release<br/>
+Does <b>not</b> apply to variants: debug<br/>
+<span class="location"><a href="../generated/res/react/release/drawable-mdpi/src_asset_image_profile11.png">../generated/res/react/release/drawable-mdpi/src_asset_image_profile11.png</a></span>: <img class="embedimage" align="right" src="../generated/res/react/release/drawable-mdpi/src_asset_image_profile11.png" /><span class="message">The resource <code>R.drawable.src_asset_image_profile11</code> appears to be unused</span><br clear="right"/>
+
+Applies to variants: release<br/>
+Does <b>not</b> apply to variants: debug<br/>
+<span class="location"><a href="../generated/res/react/release/drawable-mdpi/src_asset_image_profile14.png">../generated/res/react/release/drawable-mdpi/src_asset_image_profile14.png</a></span>: <img class="embedimage" align="right" src="../generated/res/react/release/drawable-mdpi/src_asset_image_profile14.png" /><span class="message">The resource <code>R.drawable.src_asset_image_profile14</code> appears to be unused</span><br clear="right"/>
+
+Applies to variants: release<br/>
+Does <b>not</b> apply to variants: debug<br/>
+<span class="location"><a href="../generated/res/react/release/drawable-mdpi/src_asset_image_profile15.png">../generated/res/react/release/drawable-mdpi/src_asset_image_profile15.png</a></span>: <img class="embedimage" align="right" src="../generated/res/react/release/drawable-mdpi/src_asset_image_profile15.png" /><span class="message">The resource <code>R.drawable.src_asset_image_profile15</code> appears to be unused</span><br clear="right"/>
+
+Applies to variants: release<br/>
+Does <b>not</b> apply to variants: debug<br/>
+<span class="location"><a href="../generated/res/react/release/drawable-mdpi/src_asset_image_profile2.png">../generated/res/react/release/drawable-mdpi/src_asset_image_profile2.png</a></span>: <img class="embedimage" align="right" src="../generated/res/react/release/drawable-mdpi/src_asset_image_profile2.png" /><span class="message">The resource <code>R.drawable.src_asset_image_profile2</code> appears to be unused</span><br clear="right"/>
+
+Applies to variants: release<br/>
+Does <b>not</b> apply to variants: debug<br/>
+<span class="location"><a href="../generated/res/react/release/drawable-mdpi/src_asset_image_profile9.png">../generated/res/react/release/drawable-mdpi/src_asset_image_profile9.png</a></span>: <img class="embedimage" align="right" src="../generated/res/react/release/drawable-mdpi/src_asset_image_profile9.png" /><span class="message">The resource <code>R.drawable.src_asset_image_profile9</code> appears to be unused</span><br clear="right"/>
+
+Applies to variants: release<br/>
+Does <b>not</b> apply to variants: debug<br/>
+<span class="location"><a href="../generated/res/google-services/release/values/values.xml">../generated/res/google-services/release/values/values.xml</a>:10</span>: <span class="message">The resource <code>R.string.project_id</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  7 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"google_app_id"</span> <span class="attribute">translatable</span>=<span class="value">"false"</span>>1:185978727902:android:d3cb5e45815d9c98<span class="tag">&lt;/string></span>
+<span class="lineno">  8 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"google_crash_reporting_api_key"</span> <span class="attribute">translatable</span>=<span class="value">"false"</span>>AIzaSyABg2tWHrxv1HDF8M1OCiXLdWlkXG1dlYs<span class="tag">&lt;/string></span>
+<span class="lineno">  9 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"google_storage_bucket"</span> <span class="attribute">translatable</span>=<span class="value">"false"</span>>ride-share-2434b.appspot.com<span class="tag">&lt;/string></span>
+<span class="caretline"><span class="lineno"> 10 </span>    <span class="tag">&lt;string</span><span class="attribute"> </span><span class="warning"><span class="attribute">name</span>=<span class="value">"project_id"</span></span> <span class="attribute">translatable</span>=<span class="value">"false"</span>>ride-share-2434b<span class="tag">&lt;/string></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 11 </span><span class="tag">&lt;/resources></span>
+</pre>
+
+</div>
+</div>
+<div class="metadata"><div class="explanation" id="explanationUnusedResources" style="display: none;">
+Unused resources make applications larger and slow down builds.<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "UnusedResources" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">UnusedResources</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Performance</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 3/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationUnusedResourcesLink" onclick="reveal('explanationUnusedResources');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="UnusedResourcesCardLink" onclick="hideid('UnusedResourcesCard');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="Usability:Icons"></a>
+<a name="IconDensities"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="IconDensitiesCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Icon densities validation</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../generated/res/react/release/drawable-hdpi">../generated/res/react/release/drawable-hdpi</a></span>: <span class="message">Missing the following drawables in <code>drawable-hdpi</code>: node_modules_reactnativedatepicker_date_icon.png, node_modules_reactnativegoogleplacesautocomplete_images_powered_by_google_on_white.png, node_modules_reactnativerouterflux_images_back_chevron.png, node_modules_reactnativerouterflux_images_menu_burger.png, node_modules_reactnavigationstack_dist_views_assets_backiconmask.png... (11 more)</span><br />
+
+Applies to variants: release<br/>
+Does <b>not</b> apply to variants: debug<br/>
+<span class="location"><a href="../generated/res/react/release/drawable-xhdpi">../generated/res/react/release/drawable-xhdpi</a></span>: <span class="message">Missing the following drawables in <code>drawable-xhdpi</code>: node_modules_reactnativedatepicker_date_icon.png, node_modules_reactnativerouterflux_images_back_chevron.png, node_modules_reactnativerouterflux_images_menu_burger.png, node_modules_reactnavigationstack_dist_views_assets_backiconmask.png, src_asset_image_cnic.jpeg... (10 more)</span><br />
+
+Applies to variants: release<br/>
+Does <b>not</b> apply to variants: debug<br/>
+<span class="location"><a href="../generated/res/react/release/drawable-xxhdpi">../generated/res/react/release/drawable-xxhdpi</a></span>: <span class="message">Missing the following drawables in <code>drawable-xxhdpi</code>: node_modules_reactnativedatepicker_date_icon.png, node_modules_reactnativerouterflux_images_back_chevron.png, node_modules_reactnativerouterflux_images_menu_burger.png, node_modules_reactnavigationstack_dist_views_assets_backiconmask.png, src_asset_image_cnic.jpeg... (10 more)</span><br />
+
+Applies to variants: release<br/>
+Does <b>not</b> apply to variants: debug<br/>
+</div>
+<div class="metadata"><div class="explanation" id="explanationIconDensities" style="display: none;">
+Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra high). This lint check identifies icons which do not have complete coverage across the densities.<br/>
+<br/>
+Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable <code>ANDROID_LINT_INCLUDE_LDPI=true</code>. For more information on current density usage, see <a href="http://developer.android.com/resources/dashboard/screens.html">http://developer.android.com/resources/dashboard/screens.html</a><br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/screens_support.html">http://developer.android.com/guide/practices/screens_support.html</a>
+</div>To suppress this error, use the issue id "IconDensities" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">IconDensities</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Icons</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Usability</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 4/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationIconDensitiesLink" onclick="reveal('explanationIconDensities');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="IconDensitiesCardLink" onclick="hideid('IconDensitiesCard');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="Usability"></a>
+<a name="GoogleAppIndexingWarning"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="GoogleAppIndexingWarningCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Missing support for Firebase App Indexing</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../src/main/AndroidManifest.xml">../../src/main/AndroidManifest.xml</a>:11</span>: <span class="message">App is not indexable by Google Search; consider adding at least one Activity with an ACTION-VIEW intent filter. See issue explanation for more details.</span><br /><pre class="errorlines">
+<span class="lineno">  8 </span>
+<span class="lineno">  9 </span>
+<span class="lineno"> 10 </span>
+<span class="caretline"><span class="lineno"> 11 </span>    <span class="warning"><span class="tag">&lt;application</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="attribute">
+</span><span class="lineno"> 12 </span><span class="attribute">      </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">".MainApplication"</span>
+<span class="lineno"> 13 </span>      <span class="prefix">android:</span><span class="attribute">label</span>=<span class="value">"@string/app_name"</span>
+<span class="lineno"> 14 </span>      <span class="prefix">android:</span><span class="attribute">icon</span>=<span class="value">"@mipmap/ic_launcher"</span></pre>
+
+</div>
+<div class="metadata"><div class="explanation" id="explanationGoogleAppIndexingWarning" style="display: none;">
+Adds URLs to get your app into the Google index, to get installs and traffic to your app from Google Search.<br/><div class="moreinfo">More info: <a href="https://g.co/AppIndexing/AndroidStudio">https://g.co/AppIndexing/AndroidStudio</a>
+</div>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "GoogleAppIndexingWarning" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">GoogleAppIndexingWarning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Usability</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 5/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationGoogleAppIndexingWarningLink" onclick="reveal('explanationGoogleAppIndexingWarning');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="GoogleAppIndexingWarningCardLink" onclick="hideid('GoogleAppIndexingWarningCard');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="MissingIssues"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="MissingIssuesCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Disabled Checks</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+One or more issues were not run by lint, either 
+because the check is not enabled by default, or because 
+it was disabled with a command line flag or via one or 
+more <code>lint.xml</code> configuration files in the project directories.
+<div id="SuppressedIssues" style="display: none;"><br/><br/><div class="issue">
+<div class="id">AppLinksAutoVerifyError<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Ensures that app links are correctly set and associated with website.<br/><div class="moreinfo">More info: <a href="https://g.co/appindexing/applinks">https://g.co/appindexing/applinks</a>
+</div>To suppress this error, use the issue id "AppLinksAutoVerifyError" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">AppLinksAutoVerifyWarning<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Ensures that app links are correctly set and associated with website.<br/><div class="moreinfo">More info: <a href="https://g.co/appindexing/applinks">https://g.co/appindexing/applinks</a>
+</div>To suppress this error, use the issue id "AppLinksAutoVerifyWarning" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">BackButton<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+According to the Android Design Guide,<br/>
+<br/>
+"Other platforms use an explicit back button with label to allow the user to navigate up the application's hierarchy. Instead, Android uses the main action bar's app icon for hierarchical navigation and the navigation bar's back button for temporal navigation."<br/>
+This check is not very sophisticated (it just looks for buttons with the label "Back"), so it is disabled by default to not trigger on common scenarios like pairs of Back/Next buttons to paginate through screens.<br/><div class="moreinfo">More info: <a href="http://developer.android.com/design/patterns/pure-android.html">http://developer.android.com/design/patterns/pure-android.html</a>
+</div>To suppress this error, use the issue id "BackButton" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">ConvertToWebp<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+The WebP format is typically more compact than PNG and JPEG. As of Android 4.2.1 it supports transparency and lossless conversion as well. Note that there is a quickfix in the IDE which lets you perform conversion.<br/>
+<br/>
+Launcher icons must be in the PNG format.<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "ConvertToWebp" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">EasterEgg<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+An "easter egg" is code deliberately hidden in the code, both from potential users and even from other developers. This lint check looks for code which looks like it may be hidden from sight.<br/>To suppress this error, use the issue id "EasterEgg" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">FieldGetter<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Accessing a field within the class that defines a getter for that field is at least 3 times faster than calling the getter. For simple getters that do nothing other than return the field, you might want to just reference the local field directly instead.<br/>
+<br/>
+<b>NOTE</b>: As of Android 2.3 (Gingerbread), this optimization is performed automatically by Dalvik, so there is no need to change your code; this is only relevant if you are targeting older versions of Android.<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/design/performance.html#internal_get_set">http://developer.android.com/guide/practices/design/performance.html#internal_get_set</a>
+</div>To suppress this error, use the issue id "FieldGetter" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">GoogleAppIndexingApiWarning<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Adds URLs to get your app into the Google index, to get installs and traffic to your app from Google Search.<br/><div class="moreinfo">More info: <a href="https://g.co/AppIndexing/AndroidStudio">https://g.co/AppIndexing/AndroidStudio</a>
+</div>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "GoogleAppIndexingApiWarning" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">IconExpectedSize<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+There are predefined sizes (for each density) for launcher icons. You should follow these conventions to make sure your icons fit in with the overall look of the platform.<br/><div class="moreinfo">More info: <a href="http://developer.android.com/design/style/iconography.html">http://developer.android.com/design/style/iconography.html</a>
+</div>To suppress this error, use the issue id "IconExpectedSize" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">LogConditional<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+The BuildConfig class (available in Tools 17) provides a constant, "DEBUG", which indicates whether the code is being built in release mode or in debug mode. In release mode, you typically want to strip out all the logging calls. Since the compiler will automatically remove all code which is inside a "if (false)" check, surrounding your logging calls with a check for BuildConfig.DEBUG is a good idea.<br/>
+<br/>
+If you <b>really</b> intend for the logging to be present in release mode, you can suppress this warning with a @SuppressLint annotation for the intentional logging calls.<br/>To suppress this error, use the issue id "LogConditional" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">MangledCRLF<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+On Windows, line endings are typically recorded as carriage return plus newline: \r\n.<br/>
+<br/>
+This detector looks for invalid line endings with repeated carriage return characters (without newlines). Previous versions of the ADT plugin could accidentally introduce these into the file, and when editing the file, the editor could produce confusing visual artifacts.<br/><div class="moreinfo">More info: <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=375421">https://bugs.eclipse.org/bugs/show_bug.cgi?id=375421</a>
+</div>To suppress this error, use the issue id "MangledCRLF" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">MinSdkTooLow<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+The value of the <code>minSdkVersion</code> property is too low and can be incrementedwithout noticeably reducing the number of supported devices.<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "MinSdkTooLow" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">MissingRegistered<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+If a class is referenced in the manifest or in a layout file, it must also exist in the project (or in one of the libraries included by the project. This check helps uncover typos in registration names, or attempts to rename or move classes without updating the manifest file properly.<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/topics/manifest/manifest-intro.html">http://developer.android.com/guide/topics/manifest/manifest-intro.html</a>
+</div>To suppress this error, use the issue id "MissingRegistered" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">NegativeMargin<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Margin values should be positive. Negative values are generally a sign that you are making assumptions about views surrounding the current one, or may be tempted to turn off child clipping to allow a view to escape its parent. Turning off child clipping to do this not only leads to poor graphical performance, it also results in wrong touch event handling since touch events are based strictly on a chain of parent-rect hit tests. Finally, making assumptions about the size of strings can lead to localization problems.<br/>To suppress this error, use the issue id "NegativeMargin" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">NewerVersionAvailable<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+This detector checks with a central repository to see if there are newer versions available for the dependencies used by this project. This is similar to the <code>GradleDependency</code> check, which checks for newer versions available in the Android SDK tools and libraries, but this works with any MavenCentral dependency, and connects to the library every time, which makes it more flexible but also <b>much</b> slower.<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "NewerVersionAvailable" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">PermissionImpliesUnsupportedChromeOsHardware<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+The <code>&lt;uses-permission></code> element should not require a permission that implies an unsupported Chrome OS hardware feature. Google Play assumes that certain hardware related permissions indicate that the underlying hardware features are required by default. To fix the issue, consider declaring the corresponding uses-feature element with <code>required="false"</code> attribute.<br/><div class="moreinfo">More info: <a href="https://developer.android.com/topic/arc/manifest.html#implied-features">https://developer.android.com/topic/arc/manifest.html#implied-features</a>
+</div>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "PermissionImpliesUnsupportedChromeOsHardware" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">Registered<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Activities, services and content providers should be registered in the <code>AndroidManifest.xml</code> file using <code>&lt;activity></code>, <code>&lt;service></code> and <code>&lt;provider></code> tags.<br/>
+<br/>
+If your activity is simply a parent class intended to be subclassed by other "real" activities, make it an abstract class.<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/topics/manifest/manifest-intro.html">http://developer.android.com/guide/topics/manifest/manifest-intro.html</a>
+</div>To suppress this error, use the issue id "Registered" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">SelectableText<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+If a <code>&lt;TextView></code> is used to display data, the user might want to copy that data and paste it elsewhere. To allow this, the <code>&lt;TextView></code> should specify <code>android:textIsSelectable="true"</code>.<br/>
+<br/>
+This lint check looks for TextViews which are likely to be displaying data: views whose text is set dynamically. This value will be ignored on platforms older than API 11, so it is okay to set it regardless of your <code>minSdkVersion</code>.<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "SelectableText" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">StopShip<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Using the comment <code>// STOPSHIP</code> can be used to flag code that is incomplete but checked in. This comment marker can be used to indicate that the code should not be shipped until the issue is addressed, and lint will look for these.  In Gradle projects, this is only checked for non-debug (release) builds.<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "StopShip" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">TypographyQuotes<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Straight single quotes and double quotes, when used as a pair, can be replaced by "curvy quotes" (or directional quotes). This can make the text more readable.<br/>
+<br/>
+Note that you should never use grave accents and apostrophes to quote, `like this'.<br/>
+<br/>
+(Also note that you should not use curvy quotes for code fragments.)<br/><div class="moreinfo">More info: <a href="http://en.wikipedia.org/wiki/Quotation_mark">http://en.wikipedia.org/wiki/Quotation_mark</a>
+</div>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "TypographyQuotes" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">UnpackedNativeCode<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+This app loads native libraries using <code>System.loadLibrary()</code>.<br/>
+<br/>
+Consider adding <code>android:extractNativeLibs="false"</code> to the <code>&lt;application></code> tag in AndroidManifest.xml. Starting with Android 6.0, this will make installation faster, the app will take up less space on the device and updates will have smaller download sizes.<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "UnpackedNativeCode" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">UnsupportedChromeOsHardware<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+The <code>&lt;uses-feature></code> element should not require this unsupported Chrome OS hardware feature. Any uses-feature not explicitly marked with <code>required="false"</code> is necessary on the device to be installed on. Ensure that any features that might prevent it from being installed on a Chrome OS device are reviewed and marked as not required in the manifest.<br/><div class="moreinfo">More info: <a href="https://developer.android.com/topic/arc/manifest.html#incompat-entries">https://developer.android.com/topic/arc/manifest.html#incompat-entries</a>
+</div>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "UnsupportedChromeOsHardware" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">UnusedIds<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+This resource id definition appears not to be needed since it is not referenced from anywhere. Having id definitions, even if unused, is not necessarily a bad idea since they make working on layouts and menus easier, so there is not a strong reason to delete these.<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "UnusedIds" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">WrongThreadInterprocedural<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Searches for interprocedural call paths that violate thread annotations in the program. Tracks the flow of instantiated types and lambda expressions to increase accuracy across method boundaries.<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/components/processes-and-threads.html#Threads">http://developer.android.com/guide/components/processes-and-threads.html#Threads</a>
+</div>To suppress this error, use the issue id "WrongThreadInterprocedural" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+</div>              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="SuppressedIssuesLink" onclick="reveal('SuppressedIssues');">
+List Missing Issues</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="MissingIssuesCardLink" onclick="hideid('MissingIssuesCard');">
+Dismiss</button>            </div>
+            </div>
+          </section>
+<a name="SuppressInfo"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="SuppressCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Suppressing Warnings and Errors</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+Lint errors can be suppressed in a variety of ways:<br/>
+<br/>
+1. With a <code>@SuppressLint</code> annotation in the Java code<br/>
+2. With a <code>tools:ignore</code> attribute in the XML file<br/>
+3. With a //noinspection comment in the source code<br/>
+4. With ignore flags specified in the <code>build.gradle</code> file, as explained below<br/>
+5. With a <code>lint.xml</code> configuration file in the project<br/>
+6. With a <code>lint.xml</code> configuration file passed to lint via the --config flag<br/>
+7. With the --ignore flag passed to lint.<br/>
+<br/>
+To suppress a lint warning with an annotation, add a <code>@SuppressLint("id")</code> annotation on the class, method or variable declaration closest to the warning instance you want to disable. The id can be one or more issue id's, such as <code>"UnusedResources"</code> or <code>{"UnusedResources","UnusedIds"}</code>, or it can be <code>"all"</code> to suppress all lint warnings in the given scope.<br/>
+<br/>
+To suppress a lint warning with a comment, add a <code>//noinspection id</code> comment on the line before the statement with the error.<br/>
+<br/>
+To suppress a lint warning in an XML file, add a <code>tools:ignore="id"</code> attribute on the element containing the error, or one of its surrounding elements. You also need to define the namespace for the tools prefix on the root element in your document, next to the <code>xmlns:android</code> declaration:<br/>
+<code>xmlns:tools="http://schemas.android.com/tools"</code><br/>
+<br/>
+To suppress a lint warning in a <code>build.gradle</code> file, add a section like this:<br/>
+<br/>
+android {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;lintOptions {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;disable 'TypographyFractions','TypographyQuotes'<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+}<br/>
+<br/>
+Here we specify a comma separated list of issue id's after the disable command. You can also use <code>warning</code> or <code>error</code> instead of <code>disable</code> to change the severity of issues.<br/>
+<br/>
+To suppress lint warnings with a configuration XML file, create a file named <code>lint.xml</code> and place it at the root directory of the module in which it applies.<br/>
+<br/>
+The format of the <code>lint.xml</code> file is something like the following:<br/>
+<br/>
+&lt;?xml version="1.0" encoding="UTF-8"?><br/>
+&lt;lint><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Ignore everything in the test source set --><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;issue id="all"><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ignore path="*/test/*" /><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/issue><br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Disable this given check in this project --><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;issue id="IconMissingDensityFolder" severity="ignore" /><br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Ignore the ObsoleteLayoutParam issue in the given files --><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;issue id="ObsoleteLayoutParam"><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ignore path="res/layout/activation.xml" /><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ignore path="res/layout-xlarge/activation.xml" /><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ignore regexp="(foo|bar).java" /><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/issue><br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Ignore the UselessLeaf issue in the given file --><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;issue id="UselessLeaf"><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ignore path="res/layout/main.xml" /><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/issue><br/>
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Change the severity of hardcoded strings to "error" --><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;issue id="HardcodedText" severity="error" /><br/>
+&lt;/lint><br/>
+<br/>
+To suppress lint checks from the command line, pass the --ignore flag with a comma separated list of ids to be suppressed, such as:<br/>
+<code>$ lint --ignore UnusedResources,UselessLeaf /my/project/path</code><br/>
+<br/>
+For more information, see <a href="http://g.co/androidstudio/suppressing-lint-warnings">http://g.co/androidstudio/suppressing-lint-warnings</a><br/>
+
+            </div>
+            </div>
+          </section>    </div>
+  </main>
+</div>
+</body>
+</html>

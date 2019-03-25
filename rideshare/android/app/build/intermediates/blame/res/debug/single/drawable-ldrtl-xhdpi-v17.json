@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/shoaib/Desktop/RideShare/rideshare/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/home/shoaib/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e7659dbea14de0dea79f8338ef45065e/res/drawable-ldrtl-xhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/home/shoaib/Desktop/RideShare/rideshare/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/home/shoaib/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e7659dbea14de0dea79f8338ef45065e/res/drawable-ldrtl-xhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/shoaib/Desktop/RideShare/rideshare/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17/abc_spinner_mtrl_am_alpha.9.png",
+        "source": "/home/shoaib/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/e7659dbea14de0dea79f8338ef45065e/res/drawable-ldrtl-xhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
+    }
+]

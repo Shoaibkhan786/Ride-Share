@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/shoaib/Desktop/RideShare/rideshare/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_launcher.png",
+        "source": "/home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/shoaib/Desktop/RideShare/rideshare/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_launcher_round.png",
+        "source": "/home/shoaib/Desktop/RideShare/rideshare/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    }
+]
